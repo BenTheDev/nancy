@@ -276,6 +276,7 @@
     margin-bottom: 30px;
     line-height: 1.8;
     color: #e0e0e0;
+    text-align: justify; 
   }
   
   .about-stats {
@@ -484,5 +485,116 @@
       padding: 12px 24px;
       font-size: 14px;
     }
+
+
+/* ===========================
+   FEATURED WORK
+=========================== */
+@media (max-width: 768px) {
+  .featured-work {
+    padding: 4rem 1.2rem;
   }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+}
+}
+
+
+ /* Featured Work Section */
+  .featured-work {
+    padding: 8rem 2rem;
+  }
+  
+  .section-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .section-header {
+    margin-bottom: 4rem;
+  }
+  
+  .section-header h2 {
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .section-description {
+    font-size: 1.125rem;
+    color: var(--color-muted);
+  }
+
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color:#ffffff
+  }
+  
+  .project-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .project-image {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background-color: var(--color-muted);
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-card:hover .project-image img {
+    transform: scale(1.05);
+  }
+  
+  .project-info {
+    padding: 1.5rem;
+  }
+  
+  .project-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+  }
+  
+  .project-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    transition: color 0.3s ease;
+  }
+  
+  .project-card:hover .project-info h3 {
+    color: #ffffff;
+  }
+  
+  .project-info p {
+    color: #ffffff;
+    line-height: 1.6;
+  }
+
   
