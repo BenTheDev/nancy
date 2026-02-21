@@ -543,12 +543,11 @@
   
   .project-card {
     background-color: #000000;
-    border: 1px solid #000000;
+    border: 1px solid #666666;
     border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
-    color:#ffffff
   }
   
   .project-card:hover {
@@ -574,13 +573,14 @@
   
   .project-info {
     padding: 1.5rem;
+     color:#666666;
   }
   
   .project-meta {
     display: flex;
     justify-content: space-between;
     font-size: 0.875rem;
-    color: #ffffff;
+    color: #666666;
     margin-bottom: 0.75rem;
   }
   
@@ -589,6 +589,7 @@
     font-weight: 700;
     margin-bottom: 0.75rem;
     transition: color 0.3s ease;
+    color:#ffffff;
   }
   
   .project-card:hover .project-info h3 {
@@ -596,7 +597,7 @@
   }
   
   .project-info p {
-    color: #ffffff;
+    color: #666666;
     line-height: 1.6;
   }
 
